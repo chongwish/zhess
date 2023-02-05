@@ -1,0 +1,27 @@
+newmtl TEX_ANIM_EYE_mat_id
+ illum 2
+ Ka 1 1 1
+ Kd 1 1 1
+ Ks 0.5 0.5 0.5
+ Ns 50
+ d 1
+ Tr 0
+ map_Kd ./Pii_KAIRYUU_eye.png
+newmtl mat_hara1_mat_id
+ illum 2
+ Ka 1 1 1
+ Kd 1 1 1
+ Ks 0.5 0.5 0.5
+ Ns 50
+ d 1
+ Tr 0
+ map_Kd ./Pii_KAIRYUU_hara.png
+newmtl mat_wing1_mat_id
+ illum 2
+ Ka 1 1 1
+ Kd 1 1 1
+ Ks 0.5 0.5 0.5
+ Ns 50
+ d 1
+ Tr 0
+ map_Kd ./Pii_KAIRYUU_wing.png

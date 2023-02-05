@@ -1,0 +1,45 @@
+newmtl TEX_ANIM_EYE_mat_id
+ illum 2
+ Ka 1 1 1
+ Kd 1 1 1
+ Ks 0.5 0.5 0.5
+ Ns 50
+ d 1
+ Tr 0
+ map_Kd ./Pii_GOUKAZARU_eye.png
+newmtl mat_arm_mat_id
+ illum 2
+ Ka 1 1 1
+ Kd 1 1 1
+ Ks 0.5 0.5 0.5
+ Ns 50
+ d 1
+ Tr 0
+ map_Kd ./Pii_GOUKAZARU_arm.png
+newmtl mat_front_mat_id
+ illum 2
+ Ka 1 1 1
+ Kd 1 1 1
+ Ks 0.5 0.5 0.5
+ Ns 50
+ d 1
+ Tr 0
+ map_Kd ./Pii_GOUKAZARU_front.png
+newmtl mat_kao1_mat_id
+ illum 2
+ Ka 1 1 1
+ Kd 1 1 1
+ Ks 0.5 0.5 0.5
+ Ns 50
+ d 1
+ Tr 0
+ map_Kd ./Pii_GOUKAZARU_kao.png
+newmtl mat_mimi1_mat_id
+ illum 2
+ Ka 1 1 1
+ Kd 1 1 1
+ Ks 0.5 0.5 0.5
+ Ns 50
+ d 1
+ Tr 0
+ map_Kd ./Pii_GOUKAZARU_mimi.png

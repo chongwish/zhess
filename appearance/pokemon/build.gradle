@@ -1,0 +1,57 @@
+apply plugin: "java"
+apply plugin: "application"
+
+mainClassName = "me.chongwish.zhess.appearance.pokemon.Main"
+
+repositories {
+    mavenCentral()
+}
+
+project.ext {
+  jmeVer = '3.5.2-stable'
+}
+
+project(":appearance:pokemon:assets") {
+    apply plugin: "java"
+
+    buildDir = rootProject.file("build/assets")
+
+    sourceSets {
+        main {
+            resources {
+                srcDir '.'
+            }
+        }
+    }
+
+    java {
+        toolchain {
+            languageVersion = JavaLanguageVersion.of(11)
+        }
+    }
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(11)
+    }
+}
+
+dependencies {
+
+  implementation "org.jmonkeyengine:jme3-core:$jmeVer"
+  implementation "org.jmonkeyengine:jme3-desktop:$jmeVer"
+  implementation "org.jmonkeyengine:jme3-lwjgl:$jmeVer"
+  implementation project(":appearance:pokemon:assets")
+
+  implementation project(":stuff")
+  implementation project(":bot")
+  implementation project(":game:classic")
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': "$mainClassName"
+    }
+}
+

@@ -1,0 +1,55 @@
+newmtl TEX_ANIM_EYE_mat_id
+ illum 2
+ Ka 1 1 1
+ Kd 1 1 1
+ Ks 0.5 0.5 0.5
+ Ns 50
+ d 1
+ Tr 0
+ map_Kd ./Pii_RIZAADON_NORMAL_eye.png
+newmtl mat_body_mat_id
+ illum 2
+ Ka 1 1 1
+ Kd 1 1 1
+ Ks 0.5 0.5 0.5
+ Ns 50
+ d 1
+ Tr 0
+ map_Kd ./Pii_RIZAADON_NORMAL_body.png
+newmtl mat_fire_mat_id
+ illum 2
+ Ka 1 1 1
+ Kd 1 1 1
+ Ks 0.5 0.5 0.5
+ Ns 50
+ d 1
+ Tr 0
+ map_Kd ./Pii_RIZAADON_NORMAL_fire.png
+newmtl mat_hane_mat_id
+ illum 2
+ Ka 1 1 1
+ Kd 1 1 1
+ Ks 0.5 0.5 0.5
+ Ns 50
+ d 1
+ Tr 0
+ map_Kd ./Pii_RIZAADON_NORMAL_hane.png
+newmtl mat_mouth_mat_id
+ illum 2
+ Ka 1 1 1
+ Kd 1 1 1
+ Ks 0.5 0.5 0.5
+ Ns 50
+ d 1
+ Tr 0
+ map_Kd ./Pii_RIZAADON_NORMAL_mouth.png
+newmtl mat_tume_mat_id
+ illum 2
+ Ka 1 1 1
+ Kd 1 1 1
+ Ks 0.5 0.5 0.5
+ Ns 50
+ d 1
+ Tr 0
+ map_Kd ./Pii_RIZAADON_NORMAL_tume.png
+_Kd ./Pii_RIZAADON_NORMAL_tume.png
