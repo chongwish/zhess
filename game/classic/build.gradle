@@ -1,0 +1,19 @@
+plugins {
+  id 'org.graalvm.buildtools.native' version '0.9.4'
+}
+
+apply plugin: "java"
+
+repositories {
+    mavenCentral()
+}
+
+nativeBuild {
+    imageName = 'classic-chess'
+    mainClass = 'me.chongwish.zhess.game.classic.Main'
+}
+
+dependencies {
+    implementation project(":stuff")
+    implementation project(":bot")
+}
