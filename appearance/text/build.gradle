@@ -1,0 +1,49 @@
+plugins {
+  id 'org.graalvm.buildtools.native' version '0.9.4'
+}
+
+apply plugin: "java"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(":stuff")
+    implementation project(":bot")
+    implementation project(":game:classic")
+    implementation 'com.googlecode.lanterna:lanterna:3.1.1'
+}
+
+nativeBuild {
+    imageName = 'classic-chess-text-ui'
+    mainClass = 'me.chongwish.zhess.appearance.text.Main'
+    verbose = false
+    debug = false
+    fallback = false
+    //debug = true
+    //verbose = true
+    //fallback = true
+    //buildArgs.add('--initialize-at-build-time=sun.awt.X11.XToolkit')
+    //buildArgs.add('-H:+ReportExceptionStackTraces')
+    //buildArgs.add('-Djava.awt.headless=false')
+    //agent = true
+}
+
+jar {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    manifest {
+        attributes "Main-Class": "me.chongwish.zhess.appearance.text.Main"
+    }
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
+task runMain(type: JavaExec) {
+    dependsOn build
+    group = "Execution"
+    description = "Run the main class with ExecTask"
+    classpath = sourceSets.main.runtimeClasspath
+    main = "me.chongwish.zhess.appearance.text.Main"
+}
