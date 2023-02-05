@@ -1,0 +1,7 @@
+include "stuff", "bot", "memory", "server", "sound"
+include "game:classic", "game:dark"
+include "appearance:text", "appearance:pokemon", "appearance:pokemon:assets"
+
+//project(":game:classic").name = "game-classic"
+//project(":game:dark").name = "game-dark"
+//project(":appearance:text").name = "appearance-text"
